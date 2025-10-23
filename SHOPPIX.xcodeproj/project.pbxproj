@@ -17,6 +17,8 @@
 		4F64C2F82EA6A2670096BF8F /* SHOPPIXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C2F72EA6A2670096BF8F /* SHOPPIXTests.swift */; };
 		4F64C3022EA6A2670096BF8F /* SHOPPIXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C3012EA6A2670096BF8F /* SHOPPIXUITests.swift */; };
 		4F64C3042EA6A2670096BF8F /* SHOPPIXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C3032EA6A2670096BF8F /* SHOPPIXUITestsLaunchTests.swift */; };
+		4F64C3122EA6A3060096BF8F /* LandSceenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C3102EA6A3060096BF8F /* LandSceenViewController.swift */; };
+		4F64C3132EA6A3060096BF8F /* LandSceenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F64C3112EA6A3060096BF8F /* LandSceenViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		4F64C2FD2EA6A2670096BF8F /* SHOPPIXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHOPPIXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F64C3012EA6A2670096BF8F /* SHOPPIXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHOPPIXUITests.swift; sourceTree = "<group>"; };
 		4F64C3032EA6A2670096BF8F /* SHOPPIXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHOPPIXUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F64C3102EA6A3060096BF8F /* LandSceenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandSceenViewController.swift; sourceTree = "<group>"; };
+		4F64C3112EA6A3060096BF8F /* LandSceenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandSceenViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				4F64C2EB2EA6A2660096BF8F /* LaunchScreen.storyboard */,
 				4F64C2EE2EA6A2660096BF8F /* Info.plist */,
 				4F64C2E62EA6A25E0096BF8F /* SHOPPIX.xcdatamodeld */,
+				4F64C3102EA6A3060096BF8F /* LandSceenViewController.swift */,
+				4F64C3112EA6A3060096BF8F /* LandSceenViewController.xib */,
 			);
 			path = SHOPPIX;
 			sourceTree = "<group>";
@@ -146,6 +152,8 @@
 			dependencies = (
 			);
 			name = SHOPPIX;
+			packageProductDependencies = (
+			);
 			productName = SHOPPIX;
 			productReference = 4F64C2DA2EA6A25E0096BF8F /* SHOPPIX.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +226,8 @@
 				Base,
 			);
 			mainGroup = 4F64C2D12EA6A25E0096BF8F;
+			packageReferences = (
+			);
 			productRefGroup = 4F64C2DB2EA6A25E0096BF8F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F64C3132EA6A3060096BF8F /* LandSceenViewController.xib in Resources */,
 				4F64C2ED2EA6A2660096BF8F /* LaunchScreen.storyboard in Resources */,
 				4F64C2EA2EA6A2660096BF8F /* Assets.xcassets in Resources */,
 				4F64C2E52EA6A25E0096BF8F /* Main.storyboard in Resources */,
@@ -265,6 +276,7 @@
 				4F64C2DE2EA6A25E0096BF8F /* AppDelegate.swift in Sources */,
 				4F64C2E02EA6A25E0096BF8F /* SceneDelegate.swift in Sources */,
 				4F64C2E82EA6A25E0096BF8F /* SHOPPIX.xcdatamodeld in Sources */,
+				4F64C3122EA6A3060096BF8F /* LandSceenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
