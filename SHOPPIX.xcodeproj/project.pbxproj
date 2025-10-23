@@ -113,8 +113,7 @@
 				4F64C2EB2EA6A2660096BF8F /* LaunchScreen.storyboard */,
 				4F64C2EE2EA6A2660096BF8F /* Info.plist */,
 				4F64C2E62EA6A25E0096BF8F /* SHOPPIX.xcdatamodeld */,
-				4F64C3102EA6A3060096BF8F /* LandSceenViewController.swift */,
-				4F64C3112EA6A3060096BF8F /* LandSceenViewController.xib */,
+				4F86FFB32EAA576B00B13D08 /* Land screen */,
 			);
 			path = SHOPPIX;
 			sourceTree = "<group>";
@@ -134,6 +133,15 @@
 				4F64C3032EA6A2670096BF8F /* SHOPPIXUITestsLaunchTests.swift */,
 			);
 			path = SHOPPIXUITests;
+			sourceTree = "<group>";
+		};
+		4F86FFB32EAA576B00B13D08 /* Land screen */ = {
+			isa = PBXGroup;
+			children = (
+				4F64C3102EA6A3060096BF8F /* LandSceenViewController.swift */,
+				4F64C3112EA6A3060096BF8F /* LandSceenViewController.xib */,
+			);
+			path = "Land screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
