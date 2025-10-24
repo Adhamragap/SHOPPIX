@@ -15,8 +15,6 @@ class LandSceenViewController: UIViewController {
     // ⚡️Sportivo
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
         shoppixLabel.text = ""
         //shoppixLabel.textColor = UIColor(named: "MainColor")
         shoppixLabel.font = UIFont(name: "MarkerFelt-Thin", size: 50.0)
@@ -30,13 +28,14 @@ class LandSceenViewController: UIViewController {
         }
         let totalDuration = 0.2 * charIndex
         DispatchQueue.main.asyncAfter(deadline: .now() + totalDuration) {
-             //   self.goToNextScreen()
+                self.goToNextScreen()
             }
     }
-//    func goToNextScreen() {
-//        let homeTabBar = HomeTabBarViewController()
-//        navigationController?.pushViewController(homeTabBar, animated: true)
-//        }
+    func goToNextScreen() {
+       // let homeTabBar = HomeTabBarViewController()
+        let productVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        navigationController?.pushViewController(productVC, animated: true)
+        }
 //    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
 //        super.traitCollectionDidChange(previousTraitCollection)
 //

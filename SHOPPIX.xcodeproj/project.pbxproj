@@ -19,6 +19,12 @@
 		4F64C3042EA6A2670096BF8F /* SHOPPIXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C3032EA6A2670096BF8F /* SHOPPIXUITestsLaunchTests.swift */; };
 		4F64C3122EA6A3060096BF8F /* LandSceenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C3102EA6A3060096BF8F /* LandSceenViewController.swift */; };
 		4F64C3132EA6A3060096BF8F /* LandSceenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F64C3112EA6A3060096BF8F /* LandSceenViewController.xib */; };
+		4F86FFB62EAA5C5A00B13D08 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86FFB42EAA5C5A00B13D08 /* ProductsViewController.swift */; };
+		4F86FFB72EAA5C5A00B13D08 /* ProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F86FFB52EAA5C5A00B13D08 /* ProductsViewController.xib */; };
+		4F86FFBA2EAAB2F600B13D08 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86FFB82EAAB2F600B13D08 /* ProductCollectionViewCell.swift */; };
+		4F86FFBB2EAAB2F600B13D08 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F86FFB92EAAB2F600B13D08 /* ProductCollectionViewCell.xib */; };
+		4F86FFC12EABB93C00B13D08 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F86FFBF2EABB93C00B13D08 /* HomeViewController.xib */; };
+		4F86FFC22EABB93D00B13D08 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86FFC02EABB93C00B13D08 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,12 @@
 		4F64C3032EA6A2670096BF8F /* SHOPPIXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHOPPIXUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4F64C3102EA6A3060096BF8F /* LandSceenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandSceenViewController.swift; sourceTree = "<group>"; };
 		4F64C3112EA6A3060096BF8F /* LandSceenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandSceenViewController.xib; sourceTree = "<group>"; };
+		4F86FFB42EAA5C5A00B13D08 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		4F86FFB52EAA5C5A00B13D08 /* ProductsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsViewController.xib; sourceTree = "<group>"; };
+		4F86FFB82EAAB2F600B13D08 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		4F86FFB92EAAB2F600B13D08 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		4F86FFBF2EABB93C00B13D08 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		4F86FFC02EABB93C00B13D08 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +125,8 @@
 				4F64C2EB2EA6A2660096BF8F /* LaunchScreen.storyboard */,
 				4F64C2EE2EA6A2660096BF8F /* Info.plist */,
 				4F64C2E62EA6A25E0096BF8F /* SHOPPIX.xcdatamodeld */,
+				4F86FFBE2EABB93C00B13D08 /* HomeVC */,
+				4F86FFBC2EABA97800B13D08 /* Product */,
 				4F86FFB32EAA576B00B13D08 /* Land screen */,
 			);
 			path = SHOPPIX;
@@ -142,6 +156,34 @@
 				4F64C3112EA6A3060096BF8F /* LandSceenViewController.xib */,
 			);
 			path = "Land screen";
+			sourceTree = "<group>";
+		};
+		4F86FFBC2EABA97800B13D08 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				4F86FFB42EAA5C5A00B13D08 /* ProductsViewController.swift */,
+				4F86FFB52EAA5C5A00B13D08 /* ProductsViewController.xib */,
+				4F86FFBD2EABA98700B13D08 /* cells */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		4F86FFBD2EABA98700B13D08 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				4F86FFB82EAAB2F600B13D08 /* ProductCollectionViewCell.swift */,
+				4F86FFB92EAAB2F600B13D08 /* ProductCollectionViewCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		4F86FFBE2EABB93C00B13D08 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				4F86FFBF2EABB93C00B13D08 /* HomeViewController.xib */,
+				4F86FFC02EABB93C00B13D08 /* HomeViewController.swift */,
+			);
+			path = HomeVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +296,11 @@
 			files = (
 				4F64C3132EA6A3060096BF8F /* LandSceenViewController.xib in Resources */,
 				4F64C2ED2EA6A2660096BF8F /* LaunchScreen.storyboard in Resources */,
+				4F86FFBB2EAAB2F600B13D08 /* ProductCollectionViewCell.xib in Resources */,
 				4F64C2EA2EA6A2660096BF8F /* Assets.xcassets in Resources */,
 				4F64C2E52EA6A25E0096BF8F /* Main.storyboard in Resources */,
+				4F86FFC12EABB93C00B13D08 /* HomeViewController.xib in Resources */,
+				4F86FFB72EAA5C5A00B13D08 /* ProductsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +325,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F86FFB62EAA5C5A00B13D08 /* ProductsViewController.swift in Sources */,
 				4F64C2E22EA6A25E0096BF8F /* ViewController.swift in Sources */,
+				4F86FFBA2EAAB2F600B13D08 /* ProductCollectionViewCell.swift in Sources */,
+				4F86FFC22EABB93D00B13D08 /* HomeViewController.swift in Sources */,
 				4F64C2DE2EA6A25E0096BF8F /* AppDelegate.swift in Sources */,
 				4F64C2E02EA6A25E0096BF8F /* SceneDelegate.swift in Sources */,
 				4F64C2E82EA6A25E0096BF8F /* SHOPPIX.xcdatamodeld in Sources */,
