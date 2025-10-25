@@ -105,7 +105,8 @@ class HomeViewController: UIViewController {
     }
     
     @objc func cartTapped() {
-        print("Cart tapped")
+        let cartVC = ShoppingCartViewController(nibName: "ShoppingCartViewController", bundle: nil)
+        navigationController?.pushViewController(cartVC, animated: true)
     }
 
     @objc func favoriteTapped() {

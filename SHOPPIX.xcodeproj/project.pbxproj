@@ -25,6 +25,10 @@
 		4F86FFBB2EAAB2F600B13D08 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F86FFB92EAAB2F600B13D08 /* ProductCollectionViewCell.xib */; };
 		4F86FFC12EABB93C00B13D08 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F86FFBF2EABB93C00B13D08 /* HomeViewController.xib */; };
 		4F86FFC22EABB93D00B13D08 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F86FFC02EABB93C00B13D08 /* HomeViewController.swift */; };
+		AA3685822EACF14300548986 /* ShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3685812EACF14300548986 /* ShoppingCartViewController.xib */; };
+		AA3685832EACF14300548986 /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3685802EACF14300548986 /* ShoppingCartViewController.swift */; };
+		AA3685872EACF2B600548986 /* ShoppingCartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3685862EACF2B600548986 /* ShoppingCartTableViewCell.xib */; };
+		AA3685882EACF2B600548986 /* ShoppingCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3685852EACF2B600548986 /* ShoppingCartTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		4F86FFB92EAAB2F600B13D08 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
 		4F86FFBF2EABB93C00B13D08 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		4F86FFC02EABB93C00B13D08 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AA3685802EACF14300548986 /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
+		AA3685812EACF14300548986 /* ShoppingCartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCartViewController.xib; sourceTree = "<group>"; };
+		AA3685852EACF2B600548986 /* ShoppingCartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartTableViewCell.swift; sourceTree = "<group>"; };
+		AA3685862EACF2B600548986 /* ShoppingCartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCartTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,7 @@
 				4F64C2EB2EA6A2660096BF8F /* LaunchScreen.storyboard */,
 				4F64C2EE2EA6A2660096BF8F /* Info.plist */,
 				4F64C2E62EA6A25E0096BF8F /* SHOPPIX.xcdatamodeld */,
+				AA36857F2EACF11100548986 /* ShoppingCartVC */,
 				4F86FFBE2EABB93C00B13D08 /* HomeVC */,
 				4F86FFBC2EABA97800B13D08 /* Product */,
 				4F86FFB32EAA576B00B13D08 /* Land screen */,
@@ -184,6 +193,25 @@
 				4F86FFC02EABB93C00B13D08 /* HomeViewController.swift */,
 			);
 			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		AA36857F2EACF11100548986 /* ShoppingCartVC */ = {
+			isa = PBXGroup;
+			children = (
+				AA3685842EACF29400548986 /* Cells */,
+				AA3685802EACF14300548986 /* ShoppingCartViewController.swift */,
+				AA3685812EACF14300548986 /* ShoppingCartViewController.xib */,
+			);
+			path = ShoppingCartVC;
+			sourceTree = "<group>";
+		};
+		AA3685842EACF29400548986 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AA3685852EACF2B600548986 /* ShoppingCartTableViewCell.swift */,
+				AA3685862EACF2B600548986 /* ShoppingCartTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3685822EACF14300548986 /* ShoppingCartViewController.xib in Resources */,
 				4F64C3132EA6A3060096BF8F /* LandSceenViewController.xib in Resources */,
 				4F64C2ED2EA6A2660096BF8F /* LaunchScreen.storyboard in Resources */,
 				4F86FFBB2EAAB2F600B13D08 /* ProductCollectionViewCell.xib in Resources */,
@@ -301,6 +330,7 @@
 				4F64C2E52EA6A25E0096BF8F /* Main.storyboard in Resources */,
 				4F86FFC12EABB93C00B13D08 /* HomeViewController.xib in Resources */,
 				4F86FFB72EAA5C5A00B13D08 /* ProductsViewController.xib in Resources */,
+				AA3685872EACF2B600548986 /* ShoppingCartTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +356,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F86FFB62EAA5C5A00B13D08 /* ProductsViewController.swift in Sources */,
+				AA3685882EACF2B600548986 /* ShoppingCartTableViewCell.swift in Sources */,
 				4F64C2E22EA6A25E0096BF8F /* ViewController.swift in Sources */,
+				AA3685832EACF14300548986 /* ShoppingCartViewController.swift in Sources */,
 				4F86FFBA2EAAB2F600B13D08 /* ProductCollectionViewCell.swift in Sources */,
 				4F86FFC22EABB93D00B13D08 /* HomeViewController.swift in Sources */,
 				4F64C2DE2EA6A25E0096BF8F /* AppDelegate.swift in Sources */,
