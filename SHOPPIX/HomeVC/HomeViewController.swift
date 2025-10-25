@@ -10,15 +10,17 @@ import UIKit
 class HomeViewController: UIViewController {
        //MARK: - Properties
     let coupon: String = "COUPONTest25percent"
-    
+    var isSearching: Bool = false
+
+    // Title view properties to allow updates on rotation / layout changes
+    private var titleContainer: UIView?
+    private var titleLabelView: UILabel?
+
    //MARK: - Outlets
     
     @IBOutlet weak var categoriesSearchBar: UISearchBar!
-    
     @IBOutlet weak var headerContainerView: UIView!
-    
     @IBOutlet weak var couponImageView: UIImageView!
-    
     @IBOutlet weak var categoriesCollectionView: UICollectionView!
     
        //MARK: - LifeCycle
@@ -28,6 +30,26 @@ class HomeViewController: UIViewController {
         categoriesCollectionView.register(UINib(nibName: "ProductCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ProductCollectionViewCell")
         categoriesCollectionView.dataSource = self
         categoriesCollectionView.delegate = self
+        navigationItem.hidesBackButton = true
+        
+        setupnavBar()
+    }
+
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        // Recalculate the title container width to handle rotations and size class changes.
+        guard let container = titleContainer else { return }
+
+        let screenWidth = view.bounds.width
+        // Reserve ~160pt for left/right bar button items (adjustable if your buttons change).
+        let containerWidth = max(100, screenWidth - 160)
+        let containerHeight: CGFloat = 44
+
+        // Update frame and ensure subviews layout
+        container.frame = CGRect(x: 0, y: 0, width: containerWidth, height: containerHeight)
+        container.setNeedsLayout()
+        container.layoutIfNeeded()
+        navigationItem.titleView = container
     }
 
        //MARK: - Behaviour
@@ -43,6 +65,51 @@ class HomeViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             alert.dismiss(animated: true)
         }
+    }
+    
+    func setupnavBar(){
+        navigationItem.title = "Home"
+
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .done, target: self, action: #selector(searchTapped) )
+       
+        let cartButton = UIBarButtonItem(
+            image: UIImage(systemName: "cart"),
+            style: .plain,
+            target: self,
+            action: #selector(cartTapped)
+        )
+        
+        let favoriteButton = UIBarButtonItem(
+            image: UIImage(systemName: "heart"),
+            style: .plain,
+            target: self,
+            action: #selector(favoriteTapped)
+        )
+        
+        if #available(iOS 16.0, *) {
+                navigationItem.trailingItemGroups = [
+                    UIBarButtonItemGroup(barButtonItems: [cartButton, favoriteButton], representativeItem: nil)
+                ]
+            } else {
+                navigationItem.rightBarButtonItems = [favoriteButton, cartButton]
+            }
+    }
+    
+   @objc func searchTapped(){
+        isSearching.toggle()
+        if isSearching {
+            categoriesSearchBar.isHidden = false
+        } else {
+            categoriesSearchBar.isHidden = true
+        }
+    }
+    
+    @objc func cartTapped() {
+        print("Cart tapped")
+    }
+
+    @objc func favoriteTapped() {
+        print("Favorite tapped")
     }
 
     
