@@ -33,36 +33,49 @@ class ShoppingCartTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        numberOfItemsLabel.text = "\(itemQuantity)"
-        priceLabel.text = String(format: "%.2f", pricePerItem)
-        priceContainerView.layer.borderWidth = 1
-        priceContainerView.layer.borderColor = UIColor.systemGray4.cgColor
+        setupUI()
+        updatePriceLabel()
 
     }
     override func layoutSubviews() {
         super.layoutSubviews()
         priceContainerView.layer.cornerRadius = priceContainerView.frame.height / 2
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-    }
     
        //MARK: - Behaviour
     
+    private func setupUI() {
+        priceContainerView.layer.borderWidth = 1
+        priceContainerView.layer.borderColor = UIColor.systemGray4.cgColor
+        numberOfItemsLabel.text = "\(itemQuantity)"
+    }
+    
     @IBAction func minusButtonTapped(_ sender: UIButton) {
-        if itemQuantity > 0 {
-            itemQuantity -= 1
-            numberOfItemsLabel.text = "\(itemQuantity)"
-            
-        } else {
-            itemQuantity = 0
-        }
+        guard itemQuantity > 0 else { return }
+        itemQuantity -= 1
+        numberOfItemsLabel.text = "\(itemQuantity)"
+        updatePriceLabel()
     }
     
     @IBAction func plusButtonTapped(_ sender: UIButton) {
         itemQuantity += 1
         numberOfItemsLabel.text = "\(itemQuantity)"
+        updatePriceLabel()
     }
+    
+    private func updatePriceLabel() {
+        let totalPrice = pricePerItem * Double(itemQuantity)
+        priceLabel.text = String(format: "%.2f USD", totalPrice)
+    }
+    
+    func configure(with itemName: String, brandName: String, image: UIImage?, pricePerItem: Double, quantity: Int) {
+        self.itemNameLabel.text = itemName
+        self.brandNameLabel.text = brandName
+        self.itemImageView.image = image
+        self.pricePerItem = pricePerItem
+        self.itemQuantity = quantity
+        self.numberOfItemsLabel.text = "\(quantity)"
+        updatePriceLabel()
+    }
+
 }

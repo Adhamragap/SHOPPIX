@@ -33,6 +33,7 @@ class ShoppingCartViewController: UIViewController {
        //MARK: - Actions
     
     @IBAction func proceedToCheckoutTapped(_ sender: UIButton) {
+        print("Proceed to checkout tapped")
     }
     
 }
@@ -44,8 +45,9 @@ extension ShoppingCartViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ShoppingCartTableViewCell", for: indexPath) as! ShoppingCartTableViewCell
-        
+        cell.configure(with: "Adidas Yeezy boost", brandName: "Adidas", image: UIImage(named: "shoes"), pricePerItem: 10, quantity: 1)
         return cell
+        
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         120
