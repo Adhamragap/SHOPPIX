@@ -20,15 +20,17 @@
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qg3-iH-Ukr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="USU-8Z-kyz">
-                                <rect key="frame" x="0.0" y="1" width="101" height="98.666666666666671"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfn-Gp-B4I">
+                                <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="100"/>
                                 <color key="tintColor" red="0.36964291329999999" green="0.33733564620000001" blue="0.43139100070000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="USU-8Z-kyz" secondAttribute="height" multiplier="1:1" constant="1" id="vNk-l8-1tQ"/>
-                                </constraints>
-                            </imageView>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system"/>
+                                <connections>
+                                    <action selector="selectedAddressButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AK3-jQ-HjM"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="6XC-Uo-kO4">
-                                <rect key="frame" x="109" y="0.0" width="211" height="100"/>
+                                <rect key="frame" x="57.666666666666657" y="0.0" width="262.33333333333337" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Egypt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Owo-Yd-y35">
                                         <rect key="frame" x="0.0" y="0.0" width="50.333333333333336" height="50"/>
@@ -57,12 +59,13 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="countryNameLabel" destination="Owo-Yd-y35" id="BJy-LU-uSL"/>
+                <outlet property="selectedAddressButton" destination="cfn-Gp-B4I" id="uv3-C3-vHZ"/>
                 <outlet property="specificAddressLabel" destination="s0y-c7-YKk" id="lAK-cU-OMy"/>
             </connections>
             <point key="canvasLocation" x="83.969465648854964" y="8.4507042253521139"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="house.circle" catalog="system" width="128" height="123"/>
+        <image name="circle" catalog="system" width="128" height="123"/>
     </resources>
 </document>
