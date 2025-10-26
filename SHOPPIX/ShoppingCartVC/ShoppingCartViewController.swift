@@ -33,7 +33,8 @@ class ShoppingCartViewController: UIViewController {
        //MARK: - Actions
     
     @IBAction func proceedToCheckoutTapped(_ sender: UIButton) {
-        print("Proceed to checkout tapped")
+       let addressVC = ChooseAddressViewController(nibName: "ChooseAddressViewController", bundle: nil)
+        navigationController?.pushViewController(addressVC, animated: true)
     }
     
 }

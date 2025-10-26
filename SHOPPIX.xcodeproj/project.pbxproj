@@ -29,6 +29,10 @@
 		AA3685832EACF14300548986 /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3685802EACF14300548986 /* ShoppingCartViewController.swift */; };
 		AA3685872EACF2B600548986 /* ShoppingCartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3685862EACF2B600548986 /* ShoppingCartTableViewCell.xib */; };
 		AA3685882EACF2B600548986 /* ShoppingCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3685852EACF2B600548986 /* ShoppingCartTableViewCell.swift */; };
+		AA5041292EAE719800A437E6 /* ChooseAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5041272EAE719800A437E6 /* ChooseAddressViewController.swift */; };
+		AA50412A2EAE719800A437E6 /* ChooseAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5041282EAE719800A437E6 /* ChooseAddressViewController.xib */; };
+		AA50412E2EAE729B00A437E6 /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50412C2EAE729B00A437E6 /* AddressTableViewCell.swift */; };
+		AA50412F2EAE729B00A437E6 /* AddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA50412D2EAE729B00A437E6 /* AddressTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		AA3685812EACF14300548986 /* ShoppingCartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCartViewController.xib; sourceTree = "<group>"; };
 		AA3685852EACF2B600548986 /* ShoppingCartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartTableViewCell.swift; sourceTree = "<group>"; };
 		AA3685862EACF2B600548986 /* ShoppingCartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingCartTableViewCell.xib; sourceTree = "<group>"; };
+		AA5041272EAE719800A437E6 /* ChooseAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAddressViewController.swift; sourceTree = "<group>"; };
+		AA5041282EAE719800A437E6 /* ChooseAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseAddressViewController.xib; sourceTree = "<group>"; };
+		AA50412C2EAE729B00A437E6 /* AddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
+		AA50412D2EAE729B00A437E6 /* AddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,7 @@
 				4F64C2EB2EA6A2660096BF8F /* LaunchScreen.storyboard */,
 				4F64C2EE2EA6A2660096BF8F /* Info.plist */,
 				4F64C2E62EA6A25E0096BF8F /* SHOPPIX.xcdatamodeld */,
+				AA5041262EAE717500A437E6 /* ChooseAddressVC */,
 				AA36857F2EACF11100548986 /* ShoppingCartVC */,
 				4F86FFBE2EABB93C00B13D08 /* HomeVC */,
 				4F86FFBC2EABA97800B13D08 /* Product */,
@@ -210,6 +219,25 @@
 			children = (
 				AA3685852EACF2B600548986 /* ShoppingCartTableViewCell.swift */,
 				AA3685862EACF2B600548986 /* ShoppingCartTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AA5041262EAE717500A437E6 /* ChooseAddressVC */ = {
+			isa = PBXGroup;
+			children = (
+				AA50412B2EAE726800A437E6 /* Cells */,
+				AA5041272EAE719800A437E6 /* ChooseAddressViewController.swift */,
+				AA5041282EAE719800A437E6 /* ChooseAddressViewController.xib */,
+			);
+			path = ChooseAddressVC;
+			sourceTree = "<group>";
+		};
+		AA50412B2EAE726800A437E6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AA50412C2EAE729B00A437E6 /* AddressTableViewCell.swift */,
+				AA50412D2EAE729B00A437E6 /* AddressTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -324,8 +352,10 @@
 			files = (
 				AA3685822EACF14300548986 /* ShoppingCartViewController.xib in Resources */,
 				4F64C3132EA6A3060096BF8F /* LandSceenViewController.xib in Resources */,
+				AA50412F2EAE729B00A437E6 /* AddressTableViewCell.xib in Resources */,
 				4F64C2ED2EA6A2660096BF8F /* LaunchScreen.storyboard in Resources */,
 				4F86FFBB2EAAB2F600B13D08 /* ProductCollectionViewCell.xib in Resources */,
+				AA50412A2EAE719800A437E6 /* ChooseAddressViewController.xib in Resources */,
 				4F64C2EA2EA6A2660096BF8F /* Assets.xcassets in Resources */,
 				4F64C2E52EA6A25E0096BF8F /* Main.storyboard in Resources */,
 				4F86FFC12EABB93C00B13D08 /* HomeViewController.xib in Resources */,
@@ -360,6 +390,8 @@
 				4F64C2E22EA6A25E0096BF8F /* ViewController.swift in Sources */,
 				AA3685832EACF14300548986 /* ShoppingCartViewController.swift in Sources */,
 				4F86FFBA2EAAB2F600B13D08 /* ProductCollectionViewCell.swift in Sources */,
+				AA5041292EAE719800A437E6 /* ChooseAddressViewController.swift in Sources */,
+				AA50412E2EAE729B00A437E6 /* AddressTableViewCell.swift in Sources */,
 				4F86FFC22EABB93D00B13D08 /* HomeViewController.swift in Sources */,
 				4F64C2DE2EA6A25E0096BF8F /* AppDelegate.swift in Sources */,
 				4F64C2E02EA6A25E0096BF8F /* SceneDelegate.swift in Sources */,

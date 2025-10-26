@@ -22,15 +22,15 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uLL-Ws-bjP">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uLL-Ws-bjP">
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IFT-J8-V4P">
-                            <rect key="frame" x="16" y="8" width="361" height="680.66666666666663"/>
+                            <rect key="frame" x="16" y="8" width="361" height="664.66666666666663"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </tableView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub total: 225 USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKp-sF-IRb">
-                            <rect key="frame" x="16" y="688.66666666666663" width="361" height="24"/>
+                            <rect key="frame" x="16" y="680.66666666666663" width="361" height="24"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
