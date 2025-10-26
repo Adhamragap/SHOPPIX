@@ -35,7 +35,14 @@ class ChoosePaymentViewController: UIViewController {
         paymentsTableView.dataSource = self
         paymentsTableView.register(UINib(nibName: "PaymentsTableViewCell", bundle: nil), forCellReuseIdentifier: "PaymentsTableViewCell")
     }
-
+    
+       //MARK: - Actions
+    
+    @IBAction func continueToPaymentButtonTapped(_ sender: UIButton) {
+        let placeOrderVC = PlaceOrderViewController(nibName: "PlaceOrderViewController", bundle: nil)
+        navigationController?.pushViewController(placeOrderVC, animated: true)
+    }
+    
 }
 
    //MARK: - TableView Methods

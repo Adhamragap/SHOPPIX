@@ -34,6 +34,9 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="CONTINUE TO PAYMENT"/>
+                            <connections>
+                                <action selector="continueToPaymentButtonTapped:" destination="-1" eventType="touchUpInside" id="T9e-sG-hdP"/>
+                            </connections>
                         </button>
                     </subviews>
                     <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>

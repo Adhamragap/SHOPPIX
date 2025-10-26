@@ -37,6 +37,8 @@
 		AA5041342EAE7A6F00A437E6 /* ChoosePaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5041322EAE7A6F00A437E6 /* ChoosePaymentViewController.xib */; };
 		AA5041382EAE7DCA00A437E6 /* PaymentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5041362EAE7DCA00A437E6 /* PaymentsTableViewCell.swift */; };
 		AA5041392EAE7DCA00A437E6 /* PaymentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5041372EAE7DCA00A437E6 /* PaymentsTableViewCell.xib */; };
+		AA50413D2EAE82C200A437E6 /* PlaceOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50413B2EAE82C200A437E6 /* PlaceOrderViewController.swift */; };
+		AA50413E2EAE82C200A437E6 /* PlaceOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA50413C2EAE82C200A437E6 /* PlaceOrderViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		AA5041322EAE7A6F00A437E6 /* ChoosePaymentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoosePaymentViewController.xib; sourceTree = "<group>"; };
 		AA5041362EAE7DCA00A437E6 /* PaymentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsTableViewCell.swift; sourceTree = "<group>"; };
 		AA5041372EAE7DCA00A437E6 /* PaymentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentsTableViewCell.xib; sourceTree = "<group>"; };
+		AA50413B2EAE82C200A437E6 /* PlaceOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOrderViewController.swift; sourceTree = "<group>"; };
+		AA50413C2EAE82C200A437E6 /* PlaceOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceOrderViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 				4F64C2EB2EA6A2660096BF8F /* LaunchScreen.storyboard */,
 				4F64C2EE2EA6A2660096BF8F /* Info.plist */,
 				4F64C2E62EA6A25E0096BF8F /* SHOPPIX.xcdatamodeld */,
+				AA50413A2EAE829800A437E6 /* PlaceOrderVC */,
 				AA5041302EAE7A4E00A437E6 /* ChoosePaymentVC */,
 				AA5041262EAE717500A437E6 /* ChooseAddressVC */,
 				AA36857F2EACF11100548986 /* ShoppingCartVC */,
@@ -270,6 +275,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		AA50413A2EAE829800A437E6 /* PlaceOrderVC */ = {
+			isa = PBXGroup;
+			children = (
+				AA50413B2EAE82C200A437E6 /* PlaceOrderViewController.swift */,
+				AA50413C2EAE82C200A437E6 /* PlaceOrderViewController.xib */,
+			);
+			path = PlaceOrderVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -381,6 +395,7 @@
 				AA3685822EACF14300548986 /* ShoppingCartViewController.xib in Resources */,
 				4F64C3132EA6A3060096BF8F /* LandSceenViewController.xib in Resources */,
 				AA50412F2EAE729B00A437E6 /* AddressTableViewCell.xib in Resources */,
+				AA50413E2EAE82C200A437E6 /* PlaceOrderViewController.xib in Resources */,
 				4F64C2ED2EA6A2660096BF8F /* LaunchScreen.storyboard in Resources */,
 				4F86FFBB2EAAB2F600B13D08 /* ProductCollectionViewCell.xib in Resources */,
 				AA50412A2EAE719800A437E6 /* ChooseAddressViewController.xib in Resources */,
@@ -420,6 +435,7 @@
 				4F64C2E22EA6A25E0096BF8F /* ViewController.swift in Sources */,
 				AA3685832EACF14300548986 /* ShoppingCartViewController.swift in Sources */,
 				AA5041382EAE7DCA00A437E6 /* PaymentsTableViewCell.swift in Sources */,
+				AA50413D2EAE82C200A437E6 /* PlaceOrderViewController.swift in Sources */,
 				4F86FFBA2EAAB2F600B13D08 /* ProductCollectionViewCell.swift in Sources */,
 				AA5041292EAE719800A437E6 /* ChooseAddressViewController.swift in Sources */,
 				AA5041332EAE7A6F00A437E6 /* ChoosePaymentViewController.swift in Sources */,
