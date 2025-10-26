@@ -26,8 +26,17 @@ class ChooseAddressViewController: UIViewController {
         addressesTableVIew.dataSource = self
         addressesTableVIew.register(UINib(nibName: "AddressTableViewCell", bundle: nil), forCellReuseIdentifier: "AddressTableViewCell")
     }
-
+    
+       //MARK: - Actions
+    
+    @IBAction func continueToPaymentTapped(_ sender: UIButton) {
+        let paymentsVC = ChoosePaymentViewController(nibName: "ChoosePaymentViewController", bundle: nil)
+        navigationController?.pushViewController(paymentsVC, animated: true)
+    }
+    
 }
+
+   //MARK: - TableView Methods
 extension ChooseAddressViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
