@@ -95,6 +95,7 @@
 		AA5041372EAE7DCA00A437E6 /* PaymentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentsTableViewCell.xib; sourceTree = "<group>"; };
 		AA50413B2EAE82C200A437E6 /* PlaceOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOrderViewController.swift; sourceTree = "<group>"; };
 		AA50413C2EAE82C200A437E6 /* PlaceOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceOrderViewController.xib; sourceTree = "<group>"; };
+		AA50413F2EAE8CED00A437E6 /* SHOPPIX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SHOPPIX.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +154,7 @@
 				4F64C2EB2EA6A2660096BF8F /* LaunchScreen.storyboard */,
 				4F64C2EE2EA6A2660096BF8F /* Info.plist */,
 				4F64C2E62EA6A25E0096BF8F /* SHOPPIX.xcdatamodeld */,
+				AA50413F2EAE8CED00A437E6 /* SHOPPIX.entitlements */,
 				AA50413A2EAE829800A437E6 /* PlaceOrderVC */,
 				AA5041302EAE7A4E00A437E6 /* ChoosePaymentVC */,
 				AA5041262EAE717500A437E6 /* ChooseAddressVC */,
@@ -621,6 +623,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SHOPPIX/SHOPPIX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 25WP27S325;
@@ -649,6 +652,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SHOPPIX/SHOPPIX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 25WP27S325;
