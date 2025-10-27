@@ -45,7 +45,7 @@ class PlaceOrderViewController: UIViewController {
 
             // Create payment request
             let request = PKPaymentRequest()
-            request.merchantIdentifier = "merchant.com.yourcompany.shoppix" // replace with yours
+            request.merchantIdentifier = "merchant.adham-ragap.Shoppix" 
             request.supportedNetworks = [.visa, .masterCard, .amex]
             request.merchantCapabilities = .capability3DS
             request.countryCode = "US"

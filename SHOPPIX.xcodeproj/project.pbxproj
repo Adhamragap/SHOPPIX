@@ -39,6 +39,11 @@
 		AA5041392EAE7DCA00A437E6 /* PaymentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5041372EAE7DCA00A437E6 /* PaymentsTableViewCell.xib */; };
 		AA50413D2EAE82C200A437E6 /* PlaceOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50413B2EAE82C200A437E6 /* PlaceOrderViewController.swift */; };
 		AA50413E2EAE82C200A437E6 /* PlaceOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA50413C2EAE82C200A437E6 /* PlaceOrderViewController.xib */; };
+		AA74806A2EAFB89000833665 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7480692EAFB89000833665 /* MainTabBarViewController.swift */; };
+		AA74806E2EAFB8C200833665 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74806C2EAFB8C200833665 /* ProfileViewController.swift */; };
+		AA74806F2EAFB8C200833665 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA74806D2EAFB8C200833665 /* ProfileViewController.xib */; };
+		AA7480772EAFC17C00833665 /* OrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7480752EAFC17C00833665 /* OrdersTableViewCell.swift */; };
+		AA7480782EAFC17C00833665 /* OrdersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7480762EAFC17C00833665 /* OrdersTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +101,11 @@
 		AA50413B2EAE82C200A437E6 /* PlaceOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOrderViewController.swift; sourceTree = "<group>"; };
 		AA50413C2EAE82C200A437E6 /* PlaceOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceOrderViewController.xib; sourceTree = "<group>"; };
 		AA50413F2EAE8CED00A437E6 /* SHOPPIX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SHOPPIX.entitlements; sourceTree = "<group>"; };
+		AA7480692EAFB89000833665 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		AA74806C2EAFB8C200833665 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AA74806D2EAFB8C200833665 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		AA7480752EAFC17C00833665 /* OrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewCell.swift; sourceTree = "<group>"; };
+		AA7480762EAFC17C00833665 /* OrdersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrdersTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +165,8 @@
 				4F64C2EE2EA6A2660096BF8F /* Info.plist */,
 				4F64C2E62EA6A25E0096BF8F /* SHOPPIX.xcdatamodeld */,
 				AA50413F2EAE8CED00A437E6 /* SHOPPIX.entitlements */,
+				AA7480682EAFB86500833665 /* MainTabBarViewController */,
+				AA74806B2EAFB8AA00833665 /* ProfileVC */,
 				AA50413A2EAE829800A437E6 /* PlaceOrderVC */,
 				AA5041302EAE7A4E00A437E6 /* ChoosePaymentVC */,
 				AA5041262EAE717500A437E6 /* ChooseAddressVC */,
@@ -286,6 +298,33 @@
 			path = PlaceOrderVC;
 			sourceTree = "<group>";
 		};
+		AA7480682EAFB86500833665 /* MainTabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AA7480692EAFB89000833665 /* MainTabBarViewController.swift */,
+			);
+			path = MainTabBarViewController;
+			sourceTree = "<group>";
+		};
+		AA74806B2EAFB8AA00833665 /* ProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				AA7480702EAFBC8F00833665 /* Cells */,
+				AA74806C2EAFB8C200833665 /* ProfileViewController.swift */,
+				AA74806D2EAFB8C200833665 /* ProfileViewController.xib */,
+			);
+			path = ProfileVC;
+			sourceTree = "<group>";
+		};
+		AA7480702EAFBC8F00833665 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AA7480752EAFC17C00833665 /* OrdersTableViewCell.swift */,
+				AA7480762EAFC17C00833665 /* OrdersTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -397,12 +436,14 @@
 				AA3685822EACF14300548986 /* ShoppingCartViewController.xib in Resources */,
 				4F64C3132EA6A3060096BF8F /* LandSceenViewController.xib in Resources */,
 				AA50412F2EAE729B00A437E6 /* AddressTableViewCell.xib in Resources */,
+				AA74806F2EAFB8C200833665 /* ProfileViewController.xib in Resources */,
 				AA50413E2EAE82C200A437E6 /* PlaceOrderViewController.xib in Resources */,
 				4F64C2ED2EA6A2660096BF8F /* LaunchScreen.storyboard in Resources */,
 				4F86FFBB2EAAB2F600B13D08 /* ProductCollectionViewCell.xib in Resources */,
 				AA50412A2EAE719800A437E6 /* ChooseAddressViewController.xib in Resources */,
 				4F64C2EA2EA6A2660096BF8F /* Assets.xcassets in Resources */,
 				AA5041392EAE7DCA00A437E6 /* PaymentsTableViewCell.xib in Resources */,
+				AA7480782EAFC17C00833665 /* OrdersTableViewCell.xib in Resources */,
 				4F64C2E52EA6A25E0096BF8F /* Main.storyboard in Resources */,
 				4F86FFC12EABB93C00B13D08 /* HomeViewController.xib in Resources */,
 				4F86FFB72EAA5C5A00B13D08 /* ProductsViewController.xib in Resources */,
@@ -439,8 +480,11 @@
 				AA5041382EAE7DCA00A437E6 /* PaymentsTableViewCell.swift in Sources */,
 				AA50413D2EAE82C200A437E6 /* PlaceOrderViewController.swift in Sources */,
 				4F86FFBA2EAAB2F600B13D08 /* ProductCollectionViewCell.swift in Sources */,
+				AA74806E2EAFB8C200833665 /* ProfileViewController.swift in Sources */,
 				AA5041292EAE719800A437E6 /* ChooseAddressViewController.swift in Sources */,
 				AA5041332EAE7A6F00A437E6 /* ChoosePaymentViewController.swift in Sources */,
+				AA7480772EAFC17C00833665 /* OrdersTableViewCell.swift in Sources */,
+				AA74806A2EAFB89000833665 /* MainTabBarViewController.swift in Sources */,
 				AA50412E2EAE729B00A437E6 /* AddressTableViewCell.swift in Sources */,
 				4F86FFC22EABB93D00B13D08 /* HomeViewController.swift in Sources */,
 				4F64C2DE2EA6A25E0096BF8F /* AppDelegate.swift in Sources */,
