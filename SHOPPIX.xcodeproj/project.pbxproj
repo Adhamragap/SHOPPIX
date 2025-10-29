@@ -44,6 +44,16 @@
 		AA74806F2EAFB8C200833665 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA74806D2EAFB8C200833665 /* ProfileViewController.xib */; };
 		AA7480772EAFC17C00833665 /* OrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7480752EAFC17C00833665 /* OrdersTableViewCell.swift */; };
 		AA7480782EAFC17C00833665 /* OrdersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7480762EAFC17C00833665 /* OrdersTableViewCell.xib */; };
+		AAF238E32EB1790C00FA11C4 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAF238E22EB1790C00FA11C4 /* SettingsViewController.xib */; };
+		AAF238E42EB1790C00FA11C4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF238E12EB1790C00FA11C4 /* SettingsViewController.swift */; };
+		AAF238E82EB181E700FA11C4 /* AddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAF238E72EB181E700FA11C4 /* AddressViewController.xib */; };
+		AAF238E92EB181E700FA11C4 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF238E62EB181E700FA11C4 /* AddressViewController.swift */; };
+		AAF238ED2EB1855900FA11C4 /* AddNewAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAF238EC2EB1855900FA11C4 /* AddNewAddressViewController.xib */; };
+		AAF238EE2EB1855900FA11C4 /* AddNewAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF238EB2EB1855900FA11C4 /* AddNewAddressViewController.swift */; };
+		AAF238F22EB18F9500FA11C4 /* ContactUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAF238F12EB18F9500FA11C4 /* ContactUsViewController.xib */; };
+		AAF238F32EB18F9500FA11C4 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF238F02EB18F9500FA11C4 /* ContactUsViewController.swift */; };
+		AAF238F72EB190B100FA11C4 /* AboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAF238F62EB190B100FA11C4 /* AboutUsViewController.xib */; };
+		AAF238F82EB190B100FA11C4 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF238F52EB190B100FA11C4 /* AboutUsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +116,16 @@
 		AA74806D2EAFB8C200833665 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		AA7480752EAFC17C00833665 /* OrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewCell.swift; sourceTree = "<group>"; };
 		AA7480762EAFC17C00833665 /* OrdersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrdersTableViewCell.xib; sourceTree = "<group>"; };
+		AAF238E12EB1790C00FA11C4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AAF238E22EB1790C00FA11C4 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		AAF238E62EB181E700FA11C4 /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		AAF238E72EB181E700FA11C4 /* AddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressViewController.xib; sourceTree = "<group>"; };
+		AAF238EB2EB1855900FA11C4 /* AddNewAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAddressViewController.swift; sourceTree = "<group>"; };
+		AAF238EC2EB1855900FA11C4 /* AddNewAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewAddressViewController.xib; sourceTree = "<group>"; };
+		AAF238F02EB18F9500FA11C4 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		AAF238F12EB18F9500FA11C4 /* ContactUsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactUsViewController.xib; sourceTree = "<group>"; };
+		AAF238F52EB190B100FA11C4 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		AAF238F62EB190B100FA11C4 /* AboutUsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +186,11 @@
 				4F64C2E62EA6A25E0096BF8F /* SHOPPIX.xcdatamodeld */,
 				AA50413F2EAE8CED00A437E6 /* SHOPPIX.entitlements */,
 				AA7480682EAFB86500833665 /* MainTabBarViewController */,
+				AAF238F42EB1909700FA11C4 /* AboutUsVC */,
+				AAF238EF2EB18F1300FA11C4 /* ContactUsVC */,
+				AAF238EA2EB1853F00FA11C4 /* AddNewAddressVC */,
+				AAF238E52EB181D200FA11C4 /* AddressVC */,
+				AAF238E02EB178EE00FA11C4 /* SettingsVC */,
 				AA74806B2EAFB8AA00833665 /* ProfileVC */,
 				AA50413A2EAE829800A437E6 /* PlaceOrderVC */,
 				AA5041302EAE7A4E00A437E6 /* ChoosePaymentVC */,
@@ -325,6 +350,51 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		AAF238E02EB178EE00FA11C4 /* SettingsVC */ = {
+			isa = PBXGroup;
+			children = (
+				AAF238E12EB1790C00FA11C4 /* SettingsViewController.swift */,
+				AAF238E22EB1790C00FA11C4 /* SettingsViewController.xib */,
+			);
+			path = SettingsVC;
+			sourceTree = "<group>";
+		};
+		AAF238E52EB181D200FA11C4 /* AddressVC */ = {
+			isa = PBXGroup;
+			children = (
+				AAF238E62EB181E700FA11C4 /* AddressViewController.swift */,
+				AAF238E72EB181E700FA11C4 /* AddressViewController.xib */,
+			);
+			path = AddressVC;
+			sourceTree = "<group>";
+		};
+		AAF238EA2EB1853F00FA11C4 /* AddNewAddressVC */ = {
+			isa = PBXGroup;
+			children = (
+				AAF238EB2EB1855900FA11C4 /* AddNewAddressViewController.swift */,
+				AAF238EC2EB1855900FA11C4 /* AddNewAddressViewController.xib */,
+			);
+			path = AddNewAddressVC;
+			sourceTree = "<group>";
+		};
+		AAF238EF2EB18F1300FA11C4 /* ContactUsVC */ = {
+			isa = PBXGroup;
+			children = (
+				AAF238F02EB18F9500FA11C4 /* ContactUsViewController.swift */,
+				AAF238F12EB18F9500FA11C4 /* ContactUsViewController.xib */,
+			);
+			path = ContactUsVC;
+			sourceTree = "<group>";
+		};
+		AAF238F42EB1909700FA11C4 /* AboutUsVC */ = {
+			isa = PBXGroup;
+			children = (
+				AAF238F52EB190B100FA11C4 /* AboutUsViewController.swift */,
+				AAF238F62EB190B100FA11C4 /* AboutUsViewController.xib */,
+			);
+			path = AboutUsVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -436,15 +506,20 @@
 				AA3685822EACF14300548986 /* ShoppingCartViewController.xib in Resources */,
 				4F64C3132EA6A3060096BF8F /* LandSceenViewController.xib in Resources */,
 				AA50412F2EAE729B00A437E6 /* AddressTableViewCell.xib in Resources */,
+				AAF238F22EB18F9500FA11C4 /* ContactUsViewController.xib in Resources */,
 				AA74806F2EAFB8C200833665 /* ProfileViewController.xib in Resources */,
 				AA50413E2EAE82C200A437E6 /* PlaceOrderViewController.xib in Resources */,
+				AAF238ED2EB1855900FA11C4 /* AddNewAddressViewController.xib in Resources */,
 				4F64C2ED2EA6A2660096BF8F /* LaunchScreen.storyboard in Resources */,
 				4F86FFBB2EAAB2F600B13D08 /* ProductCollectionViewCell.xib in Resources */,
 				AA50412A2EAE719800A437E6 /* ChooseAddressViewController.xib in Resources */,
+				AAF238E32EB1790C00FA11C4 /* SettingsViewController.xib in Resources */,
 				4F64C2EA2EA6A2660096BF8F /* Assets.xcassets in Resources */,
 				AA5041392EAE7DCA00A437E6 /* PaymentsTableViewCell.xib in Resources */,
 				AA7480782EAFC17C00833665 /* OrdersTableViewCell.xib in Resources */,
 				4F64C2E52EA6A25E0096BF8F /* Main.storyboard in Resources */,
+				AAF238F72EB190B100FA11C4 /* AboutUsViewController.xib in Resources */,
+				AAF238E82EB181E700FA11C4 /* AddressViewController.xib in Resources */,
 				4F86FFC12EABB93C00B13D08 /* HomeViewController.xib in Resources */,
 				4F86FFB72EAA5C5A00B13D08 /* ProductsViewController.xib in Resources */,
 				AA5041342EAE7A6F00A437E6 /* ChoosePaymentViewController.xib in Resources */,
@@ -476,21 +551,26 @@
 				4F86FFB62EAA5C5A00B13D08 /* ProductsViewController.swift in Sources */,
 				AA3685882EACF2B600548986 /* ShoppingCartTableViewCell.swift in Sources */,
 				4F64C2E22EA6A25E0096BF8F /* ViewController.swift in Sources */,
+				AAF238E92EB181E700FA11C4 /* AddressViewController.swift in Sources */,
 				AA3685832EACF14300548986 /* ShoppingCartViewController.swift in Sources */,
 				AA5041382EAE7DCA00A437E6 /* PaymentsTableViewCell.swift in Sources */,
+				AAF238E42EB1790C00FA11C4 /* SettingsViewController.swift in Sources */,
 				AA50413D2EAE82C200A437E6 /* PlaceOrderViewController.swift in Sources */,
 				4F86FFBA2EAAB2F600B13D08 /* ProductCollectionViewCell.swift in Sources */,
 				AA74806E2EAFB8C200833665 /* ProfileViewController.swift in Sources */,
 				AA5041292EAE719800A437E6 /* ChooseAddressViewController.swift in Sources */,
+				AAF238EE2EB1855900FA11C4 /* AddNewAddressViewController.swift in Sources */,
 				AA5041332EAE7A6F00A437E6 /* ChoosePaymentViewController.swift in Sources */,
 				AA7480772EAFC17C00833665 /* OrdersTableViewCell.swift in Sources */,
 				AA74806A2EAFB89000833665 /* MainTabBarViewController.swift in Sources */,
 				AA50412E2EAE729B00A437E6 /* AddressTableViewCell.swift in Sources */,
+				AAF238F82EB190B100FA11C4 /* AboutUsViewController.swift in Sources */,
 				4F86FFC22EABB93D00B13D08 /* HomeViewController.swift in Sources */,
 				4F64C2DE2EA6A25E0096BF8F /* AppDelegate.swift in Sources */,
 				4F64C2E02EA6A25E0096BF8F /* SceneDelegate.swift in Sources */,
 				4F64C2E82EA6A25E0096BF8F /* SHOPPIX.xcdatamodeld in Sources */,
 				4F64C3122EA6A3060096BF8F /* LandSceenViewController.swift in Sources */,
+				AAF238F32EB18F9500FA11C4 /* ContactUsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

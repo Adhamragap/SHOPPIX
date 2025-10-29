@@ -8,29 +8,56 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+    
        //MARK: - Outlets
     
     @IBOutlet weak var welcomeUsernameLabel: UILabel!
     
-    @IBOutlet weak var ordersTableView: UITableView!
-    
-    
        //MARK: - LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //setupTableView()
-
+        setupnavBar()
+        
     }
 
        //MARK: - Behaviour
-//    func setupTableView(){
-//        ordersTableView.delegate = self
-//        ordersTableView.dataSource = self
-//        ordersTableView.register(UINib(nibName: "OrdersTableViewCell", bundle: nil), forCellReuseIdentifier: "OrdersTableViewCell")
-//        
-//
-//    }
     
+    func setupnavBar(){
+        navigationItem.title = "Me"
+
+        let cartButton = UIBarButtonItem(
+            image: UIImage(systemName: "cart"),
+            style: .plain,
+            target: self,
+            action: #selector(cartTapped)
+        )
+        
+        let favoriteButton = UIBarButtonItem(
+            image: UIImage(systemName: "gearshape"),
+            style: .plain,
+            target: self,
+            action: #selector(settingsTapped)
+        )
+        
+        if #available(iOS 16.0, *) {
+                navigationItem.trailingItemGroups = [
+                    UIBarButtonItemGroup(barButtonItems: [cartButton, favoriteButton], representativeItem: nil)
+                ]
+            } else {
+                navigationItem.rightBarButtonItems = [favoriteButton, cartButton]
+            }
+    }
+    
+    @objc func cartTapped(){
+        let cartVC = ShoppingCartViewController(nibName: "ShoppingCartViewController", bundle: nil)
+        navigationController?.pushViewController(cartVC, animated: true)
+    }
+    
+    @objc func settingsTapped(){
+        let settingsVC = SettingsViewController(nibName: "SettingsViewController", bundle: nil)
+        navigationController?.pushViewController(settingsVC, animated: true)
+    }
     
        //MARK: - Actions
     
@@ -41,20 +68,4 @@ class ProfileViewController: UIViewController {
     @IBAction func moreWishlistButtonTapped(_ sender: UIButton) {
         print("more wishlist tapped")
     }
-    
-
-}
-
-   //MARK: - TableView Methods
-extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "OrdersTableViewCell", for: indexPath) as! OrdersTableViewCell
-        return cell
-    }
-    
-    
 }

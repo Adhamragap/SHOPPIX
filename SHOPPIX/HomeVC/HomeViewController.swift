@@ -37,15 +37,10 @@ class HomeViewController: UIViewController {
 
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        // Recalculate the title container width to handle rotations and size class changes.
         guard let container = titleContainer else { return }
-
         let screenWidth = view.bounds.width
-        // Reserve ~160pt for left/right bar button items (adjustable if your buttons change).
         let containerWidth = max(100, screenWidth - 160)
         let containerHeight: CGFloat = 44
-
-        // Update frame and ensure subviews layout
         container.frame = CGRect(x: 0, y: 0, width: containerWidth, height: containerHeight)
         container.setNeedsLayout()
         container.layoutIfNeeded()
